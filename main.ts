@@ -110,6 +110,6 @@ if (input.soundLevel() > 128) {
         music.play(music.tonePlayable(330, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
         music.play(music.tonePlayable(294, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
         music.play(music.tonePlayable(262, music.beat(BeatFraction.Double)), music.PlaybackMode.UntilDone)
-        music.play(music.tonePlayable(0, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
+        music.play(music.tonePlayable(Math.constrain(0, 0, 0), music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
     }
 }
